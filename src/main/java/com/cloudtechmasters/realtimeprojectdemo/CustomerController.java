@@ -9,6 +9,7 @@ import java.util.List;
 public class CustomerController {
     @GetMapping("/getAllCustomers")
     public List<Customer> getAllCustomers(){
+        System.out.println("getAllCustomers is called by /getAllCustomers");
         Customer customer1=new Customer(100,"vamsikrm");
         Customer customer2=new Customer(200,"harsha");
         return Arrays.asList(customer1,customer2);
